@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya Sreelekha Kara - AI & ML Engineer Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main CSS stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Neural Network Canvas Background -->
+    <canvas id="neuralCanvas"></canvas>
+
+    <!-- Background Glow Blobs -->
+    <div class="glow-blob blob-1"></div>
+    <div class="glow-blob blob-2"></div>
+    <div class="glow-blob blob-3"></div>
+
+    <!-- Navigation Header -->
+    <header>
+        <nav class="glass-nav">
+            <div class="nav-brand">
+                <span class="brand-logo">&lt;DSK /&gt;</span>
+                <span class="brand-name">Divya Sreelekha</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#contact" class="nav-cta-btn">Hire Me</a>
+                <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span> Available for Opportunities
+                </div>
+                <h1 class="hero-title">
+                    Hi, I am <span class="gradient-text">Divya Sreelekha</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    I build <span id="typing-text"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-desc">
+                    Specialized AI & ML Engineer from Guntur, AP. Passionate about building intelligent computer vision pipelines, fine-tuning reasoning models, and deploying robust full-stack AI applications.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">
+                        <span>View Projects</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <div class="dropdown-resume">
+                        <button class="btn-secondary" id="resumeDropdownBtn">
+                            <span>Get Resume</span> <i class="fa-solid fa-download"></i>
+                        </button>
+                        <div class="dropdown-content" id="resumeDropdown">
+                            <a href="DIVYA_SREELEKHA_TCS.pdf" download><i class="fa-solid fa-file-pdf"></i> TCS Tailored (AI/ML)</a>
+                            <a href="resume.pdf" download><i class="fa-solid fa-file-pdf"></i> Cisco Tailored (Cloud/DevOps)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/divya-sreelekha-202983289" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/KDSL13" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="mailto:divyasreelekhakara@gmail.com" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <div class="graphic-container">
+                    <div class="orb-outer"></div>
+                    <div class="orb-middle"></div>
+                    <div class="orb-inner"></div>
+                    <!-- Decorative tech rings -->
+                    <div class="tech-tag tag-cv"><i class="fa-solid fa-eye"></i> Computer Vision</div>
+                    <div class="tech-tag tag-llm"><i class="fa-solid fa-language"></i> LoRA Fine-Tuning</div>
+                    <div class="tech-tag tag-py"><i class="fa-brands fa-python"></i> Python Dev</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-container glass-card">
+                <div class="stat-item">
+                    <div class="stat-num gradient-text">99%</div>
+                    <div class="stat-label">Model Accuracy Delivered</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-num gradient-text">20+</div>
+                    <div class="stat-label">FPS Video Inference Optimization</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-num gradient-text">30B</div>
+                    <div class="stat-label">LLM Parameters Fine-Tuned</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-num gradient-text">5+</div>
+                    <div class="stat-label">Industry Certifications</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-section">
+            <h2 class="section-heading"><span class="number-prefix">01.</span> About Me</h2>
+            <div class="about-grid">
+                <div class="about-image-container">
+                    <div class="about-image-card glass-card">
+                        <div class="image-wrapper">
+                            <img src="profile.jpg" alt="Divya Sreelekha Kara">
+                        </div>
+                        <div class="image-glow"></div>
+                    </div>
+                </div>
+                <div class="about-text glass-card">
+                    <h3>Engineering Next-Gen AI Solutions</h3>
+                    <p>
+                        I am a Computer Science & Engineering (AI & ML) Undergraduate at Vignan's Lara Institute of Technology & Science, Guntur. I specialize in bridging the gap between sophisticated ML algorithms and scalable, real-world deployment.
+                    </p>
+                    <p>
+                        My background covers building customized computer vision solutions, designing automated pipelines for model training, and implementing SFT (Supervised Fine-Tuning) workflows on reasoning models. I love clean code, optimization, and solving real-world challenges.
+                    </p>
+                    <div class="education-card">
+                        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="edu-details">
+                            <h4>B.Tech in Computer Science & Engineering (AI & ML)</h4>
+                            <p class="edu-inst">Vignan's Lara Institute of Technology & Science, Guntur</p>
+                            <p class="edu-meta">2023 – 2027 | <span class="highlight">CGPA: 8.7 / 10.0</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card glass-card">
+                        <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                        <h4>Core Focus</h4>
+                        <p>Specialized in Python development, algorithmic optimization, and deploying full-stack AI platforms with responsive React frontends and FastAPI backends.</p>
+                    </div>
+                    <div class="highlight-card glass-card">
+                        <div class="card-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <h4>Environments & Tooling</h4>
+                        <p>Comfortable inside Unix/Linux shells, writing Bash scripts to automate workflows, and utilizing Docker for system containerization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-section">
+            <h2 class="section-heading"><span class="number-prefix">02.</span> Skill Directory</h2>
+            <div class="skills-container glass-card">
+                <div class="skills-tabs">
+                    <button class="tab-btn active" data-tab="languages">Languages</button>
+                    <button class="tab-btn" data-tab="ml-ai">ML / AI</button>
+                    <button class="tab-btn" data-tab="frameworks">Frameworks & Libs</button>
+                    <button class="tab-btn" data-tab="web-cloud">Web & Cloud</button>
+                    <button class="tab-btn" data-tab="tools">Tools & Practices</button>
+                </div>
+                <div class="tab-contents">
+                    <!-- Languages -->
+                    <div class="tab-pane active" id="languages">
+                        <div class="skills-grid-items">
+                            <div class="skill-badge"><i class="fa-brands fa-python py-color"></i> Python</div>
+                            <div class="skill-badge"><i class="fa-brands fa-js js-color"></i> JavaScript</div>
+                            <div class="skill-badge"><i class="fa-solid fa-code c-color"></i> C / C++</div>
+                            <div class="skill-badge"><i class="fa-solid fa-database sql-color"></i> SQL</div>
+                            <div class="skill-badge"><i class="fa-solid fa-terminal shell-color"></i> Bash / Shell Scripting</div>
+                        </div>
+                    </div>
+                    <!-- ML/AI -->
+                    <div class="tab-pane" id="ml-ai">
+                        <div class="skills-grid-items">
+                            <div class="skill-badge">Computer Vision</div>
+                            <div class="skill-badge">Convolutional Neural Networks (CNNs)</div>
+                            <div class="skill-badge">Supervised & Unsupervised Learning</div>
+                            <div class="skill-badge">LoRA Fine-Tuning (SFT)</div>
+                            <div class="skill-badge">cGANs & Diffusion Models</div>
+                            <div class="skill-badge">NLP Basics</div>
+                            <div class="skill-badge">Deep Learning</div>
+                        </div>
+                    </div>
+                    <!-- Frameworks -->
+                    <div class="tab-pane" id="frameworks">
+                        <div class="skills-grid-items">
+                            <div class="skill-badge"><i class="fa-solid fa-circle-nodes"></i> PyTorch</div>
+                            <div class="skill-badge"><i class="fa-solid fa-cubes"></i> TensorFlow</div>
+                            <div class="skill-badge"><i class="fa-solid fa-camera-retro"></i> OpenCV</div>
+                            <div class="skill-badge">MediaPipe</div>
+                            <div class="skill-badge">FastAPI</div>
+                            <div class="skill-badge">Flask</div>
+                            <div class="skill-badge">NumPy / Pandas</div>
+                            <div class="skill-badge">Scikit-learn</div>
+                            <div class="skill-badge">Unsloth / TRL</div>
+                        </div>
+                    </div>
+                    <!-- Web & Cloud -->
+                    <div class="tab-pane" id="web-cloud">
+                        <div class="skills-grid-items">
+                            <div class="skill-badge"><i class="fa-brands fa-react react-color"></i> React.js</div>
+                            <div class="skill-badge"><i class="fa-brands fa-node-js node-color"></i> Node.js</div>
+                            <div class="skill-badge">Express.js</div>
+                            <div class="skill-badge"><i class="fa-brands fa-docker docker-color"></i> Docker</div>
+                            <div class="skill-badge"><i class="fa-brands fa-aws aws-color"></i> AWS Basics</div>
+                            <div class="skill-badge"><i class="fa-solid fa-cloud"></i> Modal Serverless GPU</div>
+                            <div class="skill-badge"><i class="fa-solid fa-leaf mongo-color"></i> MongoDB</div>
+                            <div class="skill-badge"><i class="fa-solid fa-database mysql-color"></i> MySQL</div>
+                        </div>
+                    </div>
+                    <!-- Tools -->
+                    <div class="tab-pane" id="tools">
+                        <div class="skills-grid-items">
+                            <div class="skill-badge"><i class="fa-brands fa-git-alt git-color"></i> Git</div>
+                            <div class="skill-badge"><i class="fa-brands fa-github"></i> GitHub</div>
+                            <div class="skill-badge"><i class="fa-solid fa-book-open"></i> Jupyter Notebooks</div>
+                            <div class="skill-badge"><i class="fa-brands fa-kaggle kaggle-color"></i> Kaggle</div>
+                            <div class="skill-badge">REST APIs</div>
+                            <div class="skill-badge">Agile Methodology</div>
+                            <div class="skill-badge">OWASP Awareness</div>
+                            <div class="skill-badge">Secure Coding Principles</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-section">
+            <h2 class="section-heading"><span class="number-prefix">03.</span> Core Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="aiml">AI / ML & Reasoning</button>
+                <button class="filter-btn" data-filter="cv">Computer Vision</button>
+                <button class="filter-btn" data-filter="web">Full-Stack Web</button>
+            </div>
+            <div class="projects-grid">
+                <!-- C-THRU -->
+                <div class="project-card glass-card" data-category="aiml">
+                    <div class="project-header">
+                        <span class="project-icon"><i class="fa-solid fa-cloud-sun"></i></span>
+                        <div class="project-meta">2026 – Present <span class="prize-tag" style="background: rgba(0, 245, 255, 0.1); color: var(--accent-blue); border: 1px solid rgba(0, 245, 255, 0.25);"><i class="fa-solid fa-spinner fa-spin"></i> Ongoing</span></div>
+                    </div>
+                    <h3 class="project-title">C-THRU — Generative AI-Based Cloud Removal</h3>
+                    <p class="project-description">
+                        An operational deep learning framework designed to remove persistent cloud cover and shadow contamination from high-resolution **LISS-IV optical imagery** by fusing it with cloud-penetrating **Sentinel-1 SAR** imagery.
+                    </p>
+                    <ul class="project-features">
+                        <li>Fuses Sentinel-1 SAR and optical features using a custom U-Net encoder-decoder</li>
+                        <li>Joint optimization utilizing VGG Perceptual Loss + L1 Loss + PatchGAN Adversarial Loss</li>
+                        <li>Implements cGAN (Pix2Pix) and Conditional Denoising Diffusion Models (DDPM)</li>
+                        <li>Streamlit web dashboard to generate simulated datasets and align geospatial TIFF grids</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>PyTorch</span>
+                        <span>cGAN</span>
+                        <span>Diffusion</span>
+                        <span>Streamlit</span>
+                        <span>Rasterio</span>
+                    </div>
+                </div>
+
+                <!-- RadReport -->
+                <div class="project-card glass-card" data-category="aiml cv web">
+                    <div class="project-header">
+                        <span class="project-icon"><i class="fa-solid fa-x-ray"></i></span>
+                        <div class="project-meta">2026</div>
+                    </div>
+                    <h3 class="project-title">RadReport — Chest X-ray Report Generator</h3>
+                    <p class="project-description">
+                        An AI-driven platform that integrates a clinical Vision-Language Model (VLM) to automatically analyze chest X-rays and write structured radiology reports, drastically reducing review times.
+                    </p>
+                    <ul class="project-features">
+                        <li>FastAPI backend orchestrates primary VLM inference</li>
+                        <li>Rule-based clinical heuristics fallback engine for high reliability</li>
+                        <li>OpenCV-based attention heatmaps overlaid on scans for clinical explainability</li>
+                        <li>React.js web interface with patient files, annotations, and export pipelines</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>OpenCV</span>
+                        <span>React.js</span>
+                    </div>
+                </div>
+
+                <!-- Nemotron Solver -->
+                <div class="project-card glass-card" data-category="aiml">
+                    <div class="project-header">
+                        <span class="project-icon"><i class="fa-solid fa-brain-circuit"></i></span>
+                        <div class="project-meta">2026 <span class="prize-tag"><i class="fa-solid fa-award"></i> Winner</span></div>
+                    </div>
+                    <h3 class="project-title">Nemotron Solver — Reasoning Model Fine-Tuning</h3>
+                    <p class="project-description">
+                        Award-winning repository for supervised fine-tuning (SFT) of the NVIDIA Nemotron model to improve math and reasoning capabilities. Winner of the **NVIDIA Nemotron Reasoning Challenge Progress Prize**.
+                    </p>
+                    <ul class="project-features">
+                        <li>Stratified batching and custom loss configurations (PPO, DRO, Cross-Entropy)</li>
+                        <li>Supervised Fine-Tuning (SFT) using LoRA adapters on Nemotron-3-Nano-30B</li>
+                        <li>Data augmentation pipeline generating synthetic reasoning trace datasets</li>
+                        <li>Diagnose metrics (logprobs, gradient norms, step loss) in a custom web dashboard</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>PyTorch</span>
+                        <span>LoRA</span>
+                        <span>Modal Cloud</span>
+                        <span>Jupyter</span>
+                    </div>
+                </div>
+
+                <!-- HANDY -->
+                <div class="project-card glass-card" data-category="cv aiml">
+                    <div class="project-header">
+                        <span class="project-icon"><i class="fa-solid fa-hand-sparkles"></i></span>
+                        <div class="project-meta">2025</div>
+                    </div>
+                    <h3 class="project-title">HANDY — Real-Time Hand Gesture Recognition</h3>
+                    <p class="project-description">
+                        An optimized system designed to track hand gestures on standard on-device camera feeds to trigger keyboard, media, or interface commands without hardware GPU requirements.
+                    </p>
+                    <ul class="project-features">
+                        <li>Tracks 21 hand landmarks per frame in real-time</li>
+                        <li>Achieves 99% classification accuracy at 20+ FPS</li>
+                        <li>Integrated gesture-to-command binding for custom system scripts</li>
+                        <li>Highly optimized inference using MediaPipe and OpenCV</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>MediaPipe</span>
+                        <span>Linux</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section scroll-section">
+            <h2 class="section-heading"><span class="number-prefix">04.</span> Experience Timeline</h2>
+            <div class="timeline-container">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <span class="timeline-role">Machine Learning Intern</span>
+                        <span class="timeline-date">Mar 2026 – Apr 2026</span>
+                    </div>
+                    <div class="timeline-company"><i class="fa-solid fa-building"></i> SkillCraft Technology</div>
+                    <ul class="bullet-list">
+                        <li>Implemented end-to-end supervised learning models (Linear Regression, SVM) and unsupervised models (K-Means Clustering) using Python, Scikit-learn, and Pandas on Kaggle Notebooks.</li>
+                        <li>Developed a hand gesture recognition pipeline using OpenCV and MediaPipe, achieving 99% accuracy through careful landmark feature engineering and classifier tuning.</li>
+                        <li>Conducted data preprocessing, exploratory data analysis (EDA), feature engineering, cross-validation, and performance benchmarking across assigned ML tasks.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Achievements -->
+        <section id="certifications" class="certifications-section scroll-section">
+            <h2 class="section-heading"><span class="number-prefix">05.</span> Certifications & Honors</h2>
+            <div class="certs-grid">
+                <!-- Cisco -->
+                <div class="cert-card glass-card">
+                    <div class="cert-logo"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="cert-details">
+                        <h4>Cisco Cybersecurity Essentials</h4>
+                        <p class="cert-org">Cisco Networking Academy</p>
+                        <p class="cert-desc">Demonstrates strong knowledge of security principles, network defenses, and threat analysis paradigms.</p>
+                    </div>
+                </div>
+                <!-- Infosys -->
+                <div class="cert-card glass-card">
+                    <div class="cert-logo"><i class="fa-brands fa-python"></i></div>
+                    <div class="cert-details">
+                        <h4>Python Fundamentals</h4>
+                        <p class="cert-org">Infosys Springboard</p>
+                        <p class="cert-desc">Validates core programming competencies, structured coding architectures, and algorithm implementations.</p>
+                    </div>
+                </div>
+                <!-- Sawit GUVI -->
+                <div class="cert-card glass-card">
+                    <div class="cert-logo"><i class="fa-solid fa-microchip"></i></div>
+                    <div class="cert-details">
+                        <h4>Sawit.ai AI/ML Challenge</h4>
+                        <p class="cert-org">GUVI</p>
+                        <p class="cert-desc">National-level AI-centric problem-solving competition testing model building, tuning, and prompt engineering.</p>
+                    </div>
+                </div>
+                <!-- MS Experts Live -->
+                <div class="cert-card glass-card">
+                    <div class="cert-logo"><i class="fa-solid fa-award"></i></div>
+                    <div class="cert-details">
+                        <h4>Microsoft Experts Live India</h4>
+                        <p class="cert-org">Selected Participant</p>
+                        <p class="cert-desc">Chosen to attend this national conference discussing enterprise architectures, Azure cloud, and advanced security.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-section">
+            <h2 class="section-heading"><span class="number-prefix">06.</span> Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-card glass-card">
+                    <h3>Let's Collaborate on the Next Big AI Project</h3>
+                    <p>
+                        I'm always looking to connect with developers, researchers, and tech leads. Whether you have an interesting job opening, want to discuss model fine-tuning, or just want to chat about AI/ML architectures, feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h5>Location</h5>
+                                <p>Guntur, Andhra Pradesh, India</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <p><a href="mailto:divyasreelekhakara@gmail.com">divyasreelekhakara@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h5>Phone</h5>
+                                <p>+91-7793964869</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container glass-card">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required placeholder="Enter name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" required placeholder="Enter email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required placeholder="Enter subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="Type your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-brand">&lt;DSK /&gt;</p>
+            <p class="footer-tagline">Designing the future, one connection at a time.</p>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/divya-sreelekha-202983289" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/KDSL13" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:divyasreelekhakara@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p class="footer-copyright">&copy; 2026 Divya Sreelekha Kara. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main JS file -->
+    <script src="index.js"></script>
+</body>
+</html>
